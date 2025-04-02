@@ -1,0 +1,31 @@
+button {
+  margin: 4px;
+  background-color: rgb(167, 148, 187);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  border-radius: 4px; /* Optional: adds rounded corners */
+  color: white; /* Text color */
+}
+
+button:active {
+  background-color: blue;
+}
+
+/* Style for selected filter button */
+button.selected {
+  background-color: #2196F3; /* Blue color */
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Optional: adds glow effect */
+  font-weight: bold; /* Makes text bold */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #9c7fb9; /* Slightly darker purple */
+}
+
+/* Selected button hover */
+button.selected:hover {
+  background-color: #0d8bf2; /* Slightly darker blue */
+}

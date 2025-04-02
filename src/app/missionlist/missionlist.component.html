@@ -1,0 +1,13 @@
+<h1>101410114 | COMP 3133 | Lab Test2 | SpaceX API</h1>
+<h2>Mission List</h2>
+
+<app-missionfilter (filtersChanged)="onFiltersChanged($event)"></app-missionfilter>
+
+<div *ngFor="let mission of missions" (click)="openDetails(mission.flight_number)" style="cursor: pointer;">
+  <div style="background-color: rgb(235, 188, 107); margin: 10px; padding: 15px; border: 1px solid #000;">
+    <img [src]="mission.links.mission_patch_small" alt="patch" width="100" />
+    <h3>{{ mission.mission_name }}</h3>
+    <p><strong>{{ mission.launch_year }}</strong></p>
+    <p>{{ mission.details }}</p>
+  </div>
+</div>

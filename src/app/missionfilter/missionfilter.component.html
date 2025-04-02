@@ -1,0 +1,18 @@
+<div>
+    <h3>Launch Date</h3>
+    <button *ngFor="let year of years" (click)="selectedYear = year; applyFilters()">
+      {{ year }}
+    </button>
+  
+    <h3>Successful Launch</h3>
+    <button (click)="launchSuccess = true; applyFilters()">True</button>
+    <button (click)="launchSuccess = false; applyFilters()">False</button>
+  
+    <h3>Successful Land</h3>
+    <button (click)="landSuccess = true; applyFilters()">True</button>
+    <button (click)="landSuccess = false; applyFilters()">False</button>
+  
+    <br /><br />
+    <button (click)="resetFilters()">Reset Filters</button>
+  </div>
+  
