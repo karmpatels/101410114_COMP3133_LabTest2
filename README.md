@@ -64,7 +64,7 @@ ng build --prod
 5. Hosting
 
 The application is hosted on Vercel.
-Live demo: https://101410114-comp3133-labtest2.vercel.app
+Live demo: https://101410114-comp-3133-labtest2.vercel.app
 
 ## API Endpoints
 
